@@ -1,3 +1,5 @@
+/* https://www.youtube.com/watch?v=XoX00V3yxys&t=584s */
+
 node {
     
     def mvnHome = tool 'Maven3'
@@ -25,7 +27,7 @@ node {
         kubernetesDeploy(
             configs: 'MyAwesomeApp/springBootDeploy.yml',
             kubeconfigId: 'K8S',
-            enableConfigSubstitution: true.
+            enableConfigSubstitution: true
             )
     }
     /*
