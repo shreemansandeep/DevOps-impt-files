@@ -25,7 +25,7 @@ node {
         kubernetesDeploy(
             configs: 'MyAwesomeApp/springBootDeploy.yml',
             kubeconfigId: 'K8S',
-            enableConfigSubstitution: true
+            enableConfigSubstitution: true.
             )
     }
     /*
